@@ -1,0 +1,9 @@
+{
+    "NavBar": {
+        "home": "Home",
+        "benefits": "Benefits",
+        "solution": "Solution",
+        "pricing": "Pricing",
+        "contact": "Contact"
+    }
+}

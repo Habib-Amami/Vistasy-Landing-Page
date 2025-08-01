@@ -1,0 +1,9 @@
+{
+    "NavBar": {
+        "home": "Accueil",
+        "benefits": "Avantages",
+        "solution": "Solution",
+        "pricing": "Tarifs",
+        "contact": "Contact"
+    }
+}
