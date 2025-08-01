@@ -4,10 +4,10 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
-import { Logo } from '@/components/logo'
-import { LanguesDropdownMenu } from '@/components/language-dropdown-menu'
+import { Logo } from '@/components/navbar/logo'
+import { LanguesDropdownMenu } from '@/components/navbar/language-dropdown-menu'
 import { NavBarItems } from '@/constants/navbar-items-list'
-import ThemeSwitcher from './theme/theme-switcher'
+import ThemeSwitcher from '../theme/theme-switcher'
 import { usePathname } from 'next/navigation'
 import {useTranslations} from 'next-intl';
 
