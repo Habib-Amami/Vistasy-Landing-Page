@@ -1,9 +1,174 @@
 {
+    "Metadata": {
+        "home": {
+            "title": "Vistasy – Diagnostic Facial et Recommandations de Soins par IA",
+            "description": "Découvrez Vistasy, une solution IA pour l'analyse de la peau et des recommandations de soins personnalisées."
+        },
+        "benefits": {
+            "title": "Pourquoi Choisir Vistasy – Avantages de l'Analyse IA",
+            "description": "Découvrez les avantages de l’analyse de peau par IA proposée par Vistasy."
+        },
+        "solution": {
+            "title": "Notre Solution – Soins de Peau Personnalisés par IA",
+            "description": "Découvrez comment Vistasy utilise l'IA pour analyser votre peau et recommander des soins adaptés."
+        },
+        "pricing": {
+            "title": "Tarifs – Plans Abordables pour le Diagnostic IA | Vistasy",
+            "description": "Choisissez le plan Vistasy qui correspond à votre parcours de soins personnalisés."
+        },
+        "contact": {
+            "title": "Contactez Vistasy – Commencez Votre Parcours de Soin IA",
+            "description": "Contactez l'équipe Vistasy pour en savoir plus ou démarrer votre routine personnalisée."
+        }
+    },
     "NavBar": {
         "home": "Accueil",
         "benefits": "Avantages",
         "solution": "Solution",
         "pricing": "Tarifs",
         "contact": "Contact"
+    },
+    "Footer": {
+        "goHome": "Aller à l'accueil",
+        "linksTitle": "Liens",
+        "findUsTitle": "Nous trouver",
+        "addressTitle": "Adresse",
+        "address": "Adresse 012 Rue du CANADA, Bâtiment B, 4ème étage, E1 Tunis, Tunisie 1002",
+        "hoursTitle": "Horaires",
+        "hours": "Lundi–Vendredi : 9h00–17h00\nSamedi & Dimanche : Fermé",
+        "copyright": "Tous droits réservés"
+    },
+    "HomePage": {
+        "partnersTitle": "Nous travaillons avec ces partenaires",
+        "contact": "contactez-nous",
+        "slogan": "redéfinir les soins et la beauté",
+        "feature1": {
+            "title": "Débloquez une peau plus saine grâce à notre technologie de diagnostic personnalisée",
+            "description": "Découvrez une technologie de diagnostic de pointe conçue pour démocratiser l'accès à des solutions de soins de la peau personnalisées. Obtenez de meilleurs résultats de santé avec des recommandations de produits adaptées rien que pour vous."
+        },
+        "feature2": {
+            "title": "Notre solution de soins de la peau alimentée par l’IA",
+            "description": "Notre solution avancée utilise le traitement d’image, la vision par ordinateur et l’informatique en nuage pour analyser vos traits faciaux et conditions cutanées. Recevez des recommandations cosmétiques personnalisées adaptées à vos besoins uniques."
+        },
+        "feature3": {
+            "title": "Diagnostic cutané approfondi",
+            "description": "Grâce à une technologie de pointe, nous proposons un diagnostic de soins de la peau personnalisé et des régimes optimaux adaptés à vos besoins uniques. Notre interface simple et conviviale offre des rapports détaillés, mettant votre plan de soins personnalisé à portée de main."
+        },
+        "feature4": {
+            "title": "Intégration de miroir intelligent",
+            "description": "Améliorez l’engagement client en magasin avec notre miroir intelligent. Il fournit des diagnostics cutanés personnalisés et des recommandations de produits en magasin, offrant une expérience immersive et interactive qui favorise la fidélité client et augmente les ventes."
+        }
+    },
+    "BenefitsPage": {
+        "title": "Prêt à vivre la différence ?",
+        "cards": {
+            "01": {
+                "title": "client de passage",
+                "description": "Attirez davantage de clients de passage grâce à notre solution interactive et engageante, les incitant à entrer dans votre magasin ou à visiter votre site web."
+            },
+            "02": {
+                "title": "connecter & identifier",
+                "description": "Renforcez votre présence en ligne et transformez vos visiteurs en clients fidèles avec des expériences numériques captivantes."
+            },
+            "03": {
+                "title": "recommander & engager",
+                "description": "Proposez des recommandations personnalisées et engagez vos clients avec des suggestions pertinentes et des expériences interactives."
+            },
+            "04": {
+                "title": "suivre & fidéliser",
+                "description": "Surveillez les interactions et préférences clients pour mieux comprendre leur comportement, favoriser les ventes croisées et fidéliser avec des stratégies ciblées."
+            },
+            "05": {
+                "title": "analyse des données",
+                "description": "Obtenez des insights précieux à partir des données clients pour affiner vos stratégies, optimiser les stocks et améliorer la satisfaction grâce à un marketing ciblé."
+            }
+        }
+    },
+    "SolutionPage": {
+        "transform_the_customer_experience": "transformer l'expérience client !",
+        "OnlineStore": {
+            "online_store": "boutique en ligne",
+            "reduction_churn_rate": "réduction du taux d'attrition",
+            "increase_on_screen_time": "augmentation du temps passé à l'écran",
+            "boost_customer_retention_engagement": "amélioration de la rétention et de l'engagement client",
+            "improvement_marketing_efficiency": "meilleure efficacité marketing",
+            "higher_ROI_targeted_campaigns": "retour sur investissement plus élevé pour les campagnes ciblées"
+        },
+        "OnsiteStore": {
+            "onsite_store": "magasin physique",
+            "reduction_customer_acquisition_costs": "réduction des coûts d'acquisition client",
+            "ai_expert_staff_training": "expert IA, réduisant la dépendance à la formation du personnel",
+            "real_time_tailored_recommendations": "recommandations personnalisées en temps réel selon l’inventaire",
+            "boost_cross_selling_opportunities": "augmentation des opportunités de ventes croisées",
+            "effective_targeted_marketing": "marketing ciblé plus efficace"
+        },
+        "OnlineOnsiteStores": {
+            "online_onsite_stores": "magasins en ligne et physiques",
+            "online_store_solution": "Solution Boutique EN LIGNE",
+            "onsite_store_solution": "Solution Magasin PHYSIQUE",
+            "seamless_omni_channel_experience": "Expérience Omnicanale Fluide",
+            "enhanced_loyalty_program": "Programme de Fidélité Amélioré"
+        }
+    },
+    "PricingPage": {
+        "title": "Prêt à commencer ?",
+        "subtitle": "Découvrez nos offres tarifaires",
+        "image_alt": "Ligne décorative",
+        "cards": {
+            "hardware": {
+                "title": "Matériel en tant que service",
+                "subtitle": "Sur mesure",
+                "subtitle_description": "/Miroir ou Tablette",
+                "features": {
+                    "label": "Miroir intelligent (achat / location) :",
+                    "list_items": [
+                        "10° (tablette)",
+                        "27",
+                        "32",
+                        "42",
+                        "55"
+                    ]
+                },
+                "button_text": "Réserver un appel"
+            },
+            "service": {
+                "title": "Paiement par service",
+                "subtitle": "Sur mesure",
+                "subtitle_description": "/Service",
+                "features": [
+                    "Modèle graphique & organisation des résultats",
+                    "Gestion des données (traitement, analyse, raffinement)",
+                    "Implémentation de fonctionnalités spécifiques",
+                    "Intégration technologique dans une application existante ou création d’une application de diagnostic facial et de recommandations"
+                ],
+                "button_text": "Réserver un appel"
+            },
+            "software": {
+                "title": "Logiciel en tant que service",
+                "subtitle": "Paiement à l'utilisation",
+                "subtitle_description": "/Utilisation du diagnostic",
+                "features": [
+                    "Accès à des modules puissants : Diagnostic Facial, Recommandations Produits, Marketing et Sondages.",
+                    "Avec des forfaits à partir de 500 utilisations par module."
+                ],
+                "button_text": "Réserver un appel"
+            }
+        }
+    },
+    "ContactPage": {
+        "title": "TRAVAILLONS ENSEMBLE",
+        "form": {
+            "name_label": "Nom",
+            "email_label": "E-mail",
+            "message_label": "Message",
+            "submit_button": "Envoyer",
+            "errors": {
+                "name_required": "Le nom est obligatoire",
+                "email_required": "L'email est obligatoire",
+                "email_invalid": "L'email n'est pas valide",
+                "message_required": "Le message est obligatoire"
+            }
+        },
+        "contact_paragraph": "Ou contactez-nous via cet e-mail"
     }
 }

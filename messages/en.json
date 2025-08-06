@@ -1,9 +1,173 @@
 {
+    "Metadata": {
+        "home": {
+            "title": "Vistasy – AI Facial Diagnosis & Care Recommendations",
+            "description": "Discover Vistasy, an AI-powered solution for facial skin analysis and personalized skincare product recommendations."
+        },
+        "benefits": {
+            "title": "Why Choose Vistasy – AI Skin Analysis Benefits",
+            "description": "Explore the benefits of Vistasy’s AI-powered skin analysis and smart recommendations."
+        },
+        "solution": {
+            "title": "Our Solution – Personalized AI Skincare by Vistasy",
+            "description": "See how Vistasy uses AI to analyze your skin and match products to your needs."
+        },
+        "pricing": {
+            "title": "Pricing – Affordable AI Skin Diagnosis Plans | Vistasy",
+            "description": "Choose the Vistasy plan that fits your skin care journey and goals."
+        },
+        "contact": {
+            "title": "Contact Vistasy – Start Your AI Skin Journey",
+            "description": "Get in touch with the Vistasy team to learn more or start your personalized skincare plan."
+        }
+    },
     "NavBar": {
         "home": "Home",
         "benefits": "Benefits",
         "solution": "Solution",
         "pricing": "Pricing",
         "contact": "Contact"
+    },
+    "Footer": {
+        "goHome": "Go home",
+        "linksTitle": "Links",
+        "findUsTitle": "Find Us",
+        "addressTitle": "Address",
+        "address": "Address 012 Street of CANADA, Building B, 4th Floor, E1 Tunis, Tunisia 1002",
+        "hoursTitle": "Hours",
+        "hours": "Monday–Friday: 9:00AM–5:00PM\nSaturday & Sunday: OFF",
+        "copyright": "All rights reserved"
+    },
+    "HomePage": {
+        "partnersTitle": "We work with these partners",
+        "contact": "contact us",
+        "slogan": "redefining skincare & beauty",
+        "feature1": {
+            "title": "Unlock Healthier Skin with Our Personalized diagnosis technology",
+            "description": "Experience Cutting-Edge Diagnosis Technology Designed to Democratize Access To Customized Skincare Solutions. Achieve Better Health Results With Tailored Product Recommendations Just For You."
+        },
+        "feature2": {
+            "title": "Our AI-Powered Skincare Solution",
+            "description": "Our Advanced Solution utilize Image Processing, Computer Vision & Cloud Computing To Analyze Your Facial Features & Skin Conditions. Get Personalized Cosmetic Product Recommendation Tailored To Your Unique Needs."
+        },
+        "feature3": {
+            "title": "In-Depth Skin Diagnosis",
+            "description": "Using Cutting-Edge Technology, We Deliver Personalized Skincare Diagnosis & Optimal Regimens Tailored To Your Unique Needs. Our Simple, User-Friendly Interface Offers Detailed Reports, Putting Your Customized Skincare Plan At Your Fingertips."
+        },
+        "feature4": {
+            "title": "Smart mirror integration",
+            "description": "Enhance Customer Engagement In Physical Stores With Our Smart Mirror. It Provides Personalized Skin Diagnoses & in-Store Product Recommendations, Offering An Immersive & Interactive Experience That Drives Customer Loyalty and Boosts Sales."
+        }
+    },
+    "BenefitsPage": {
+        "title": "ready experience the difference ?",
+        "cards": {
+            "01": {
+                "title": "walking custom",
+                "description": "Attract more walking customers with our engaging and interactive solution, drawing them into your store or website with compelling experiences."
+            },
+            "02": {
+                "title": "connect & identify",
+                "description": "Boost your online presence and convert visitors into loyal customers with captivating digital experiences."
+            },
+            "03": {
+                "title": "recommend & engage",
+                "description": "Provide tailored recommendations and keep customers engaged by offering personalized product suggestions and interactive experiences."
+            },
+            "04": {
+                "title": "track & retain",
+                "description": "Monitor customer interactions and preferences to effectively track behavior, enhance cross-selling opportunities, and build loyalty through targeted retention strategies."
+            },
+            "05": {
+                "title": "data insights",
+                "description": "Gain valuable insights from customer data to refine your strategies, optimize inventory, and enhance customer satisfaction with smart, targeted marketing."
+            }
+        }
+    },
+    "SolutionPage": {
+        "transform_the_customer_experience": "transform The customer experience !",
+        "OnlineStore": {
+            "online_store": "online store",
+            "reduction_churn_rate": "reduction in churn rate",
+            "increase_on_screen_time": "increase in on-screen time",
+            "boost_customer_retention_engagement": "boost in customer retention & engagement",
+            "improvement_marketing_efficiency": "improvement in marketing efficiency",
+            "higher_ROI_targeted_campaigns": "Higher ROI on targeted campaigns"
+        },
+        "OnsiteStore": {
+            "onsite_store": "onsite store",
+            "reduction_customer_acquisition_costs": "reduction in customer acquisition costs",
+            "ai_expert_staff_training": "AI expert, reducing reliance on staff training",
+            "real_time_tailored_recommendations": "tailored made recommendations based on inventory",
+            "boost_cross_selling_opportunities": "boost in cross selling opportunities",
+            "effective_targeted_marketing": "more effective targeted marketing"
+        },
+        "OnlineOnsiteStores": {
+            "online_onsite_stores": "online & onsite stores",
+            "online_store_solution": "ONLINE Store Solution",
+            "onsite_store_solution": "ONSITE Store Solution",
+            "seamless_omni_channel_experience": "Seamless Omni-Channel Experience",
+            "enhanced_loyalty_program": "Enhanced Customer Loyalty Program"
+        }
+    },
+    "PricingPage": {
+        "title": "Ready to get started ?",
+        "subtitle": "Check our pricing plans",
+        "cards": {
+            "hardware": {
+                "title": "Hardware As A Service",
+                "subtitle": "Tailor-made",
+                "subtitle_description": "/Mirror Or Tablet",
+                "features": {
+                    "label": "Smart mirror (purchase / rental):",
+                    "list_items": [
+                        "10° (tablet)",
+                        "27",
+                        "32",
+                        "42",
+                        "55"
+                    ]
+                },
+                "button_text": "Book a Call"
+            },
+            "service": {
+                "title": "Pay Per Service",
+                "subtitle": "Tailor-made",
+                "subtitle_description": "/Service",
+                "features": [
+                    "Graphic template & results organization",
+                    "Data handling (management, processing, analysis and refining)",
+                    "Specific feature implementation",
+                    "Technology integration into an existing App, creating a Face Diagnosis & recommendation App from scratch"
+                ],
+                "button_text": "Book a Call"
+            },
+            "software": {
+                "title": "Software As A Service",
+                "subtitle": "Pay As You Go",
+                "subtitle_description": "/Diagnosis Usage",
+                "features": [
+                    "Access powerful modules: Facial Diagnosis, Product Recommendations, Marketing, and Surveys.",
+                    "With Plans starting at 500 uses per module."
+                ],
+                "button_text": "Book a Call"
+            }
+        }
+    },
+    "ContactPage": {
+        "title": "LET'S WORK TOGETHER",
+        "form": {
+            "name_label": "Name",
+            "email_label": "E-mail",
+            "message_label": "Message",
+            "submit_button": "Send",
+            "errors": {
+                "name_required": "Name is required",
+                "email_required": "Email is required",
+                "email_invalid": "Invalid email address",
+                "message_required": "Message is required"
+            }
+        },
+        "contact_paragraph": "Or contact us via this e-mail"
     }
 }
