@@ -1,15 +1,15 @@
 'use client'
-import {Link} from '@/i18n/navigation';
+import { Link } from '@/i18n/navigation';
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
-import { Logo } from '@/components/navbar/logo'
+import { Logo } from '@/components/logo'
 import { LanguesDropdownMenu } from '@/components/navbar/language-dropdown-menu'
 import { NavBarItems } from '@/constants/navbar-items-list'
 import ThemeSwitcher from '../theme/theme-switcher'
 import { usePathname } from 'next/navigation'
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 
 export default function NavBar() {
@@ -64,7 +64,7 @@ export default function NavBar() {
                                                         : ''
                                                     }`}
                                             >
-                                                <span>{t(item.name)}</span>
+                                                <span>{t(item.title)}</span>
                                             </Link>
                                         </li>
                                     ))}

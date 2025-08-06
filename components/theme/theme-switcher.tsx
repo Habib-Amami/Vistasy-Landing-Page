@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { LaptopMinimalIcon, MoonIcon, SunIcon } from "lucide-react";
+import { MoonIcon, SunIcon } from "lucide-react";
 
 import {
   DropdownMenu,
@@ -14,7 +14,7 @@ import { useTheme } from "next-themes";
 
 export default function ThemeSwitcher() {
   const [open, setOpen] = React.useState(false);
-  const { theme, setTheme } = useTheme()
+  const { setTheme } = useTheme()
 
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>

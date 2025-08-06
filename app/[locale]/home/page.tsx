@@ -1,7 +1,73 @@
-export default function Home() {
-    return (
-        <div>
+import { useTranslations } from 'next-intl';
+import { getTranslations } from "next-intl/server";
 
-        </div>
+import HeroSection from "@/components/home/hero-section/hero-section";
+import Feature from "@/components/home/feature";
+import LogoCloud from "@/components/home/logo-cloud";
+
+export async function generateMetadata() {
+  const t = await getTranslations("Metadata.home");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
+export default function Home() {
+    const t = useTranslations('HomePage');
+
+    return (
+        <main className="p-8">
+            {/*Hero section section*/}
+            <section className="max-w-5xl mx-auto pr-8 pl-8 pt-8">
+                <HeroSection
+                    backgroundImage="/hero-section/Hero-bg.svg"
+                    foregroundImage="/hero-section/Hero-fg.png"
+                    title="VISTASY"
+                    subTitle={t('slogan')}
+                    // buttonText={t("contact")}
+                    // onButtonClick={() => { }}
+                />
+            </section>
+            {/*Partners section*/}
+            <section className="max-w-5xl mx-auto pr-8 pl-8 pt-16">
+                <h1 className="uppercase mb-6 text-xl text-center lg:text-start  lg:text-3xl font-bold">{t('partnersTitle')}</h1>
+                <LogoCloud />
+            </section>
+            {/*Features section*/}
+            <section>
+                <Feature
+                    title={t('feature1.title')}
+                    description={t('feature1.description')}
+                    imageSrc="/features/ft1.png"
+                    imageAlt=""
+                    buttonColor="bg-c-purple"
+                />
+                <Feature
+                    title={t('feature2.title')}
+                    description={t('feature2.description')}
+                    imageSrc="/features/ft2.png"
+                    imageAlt=""
+                    reverse={true}
+                    buttonColor="bg-c-orange"
+                />
+                <Feature
+                    title={t('feature3.title')}
+                    description={t('feature3.description')}
+                    imageSrc="/features/ft3.png"
+                    imageAlt=""
+                    buttonColor="bg-c-blue"
+                />
+                <Feature
+                    title={t('feature4.title')}
+                    description={t('feature4.description')}
+                    imageSrc="/features/ft4.png"
+                    imageAlt=""
+                    reverse={true}
+                    buttonColor="bg-c-purple"
+                />
+            </section>
+        </main>
     );
 }

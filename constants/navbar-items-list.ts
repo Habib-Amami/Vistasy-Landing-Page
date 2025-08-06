@@ -1,7 +1,7 @@
 export const NavBarItems = [
-    { name: 'home', href: '/home' },
-    { name: 'benefits', href: '/benefits' },
-    { name: 'solution', href: '/solution' },
-    { name: 'pricing', href: '/pricing' },
-    { name: 'contact', href: '/contact' },
+    { title: 'home', href: '/home' },
+    { title: 'benefits', href: '/benefits' },
+    { title: 'solution', href: '/solution' },
+    { title: 'pricing', href: '/pricing' },
+    { title: 'contact', href: '/contact' },
 ]

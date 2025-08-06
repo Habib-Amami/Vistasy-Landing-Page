@@ -16,8 +16,8 @@ export function Logo({
   lightLogoSrc = "/vistasy_logo/logo_black.png",
   darkLogoSrc = "/vistasy_logo/logo_white.png",
   alt = "App Logo",
-  width = 100,
-  height = 50,
+  width = 30,
+  height = 30,
   className,
 }: LogoDisplayProps) {
   const { theme } = useTheme()
