@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useTheme } from "next-themes"
+import { useEffect, useState } from "react"
 
 interface LogoDisplayProps {
   lightLogoSrc?: string
@@ -20,12 +21,29 @@ export function Logo({
   height = 30,
   className,
 }: LogoDisplayProps) {
-  const { theme } = useTheme()
+  const { theme, systemTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
-  // Determine which logo to display based on the current theme.
-  // If theme is 'dark', use darkLogoSrc, otherwise use lightLogoSrc.
-  // Fallback to lightLogoSrc if theme is undefined or 'system' and system preference is light.
-  const currentLogoSrc = theme === "dark" ? darkLogoSrc : lightLogoSrc
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    // Prevent rendering wrong logo during SSR
+    return (
+      <Image
+        src={lightLogoSrc}
+        alt={alt}
+        width={width}
+        height={height}
+        className={className}
+        priority
+      />
+    )
+  }
+
+  const effectiveTheme = theme === "system" ? systemTheme : theme
+  const currentLogoSrc = effectiveTheme === "dark" ? darkLogoSrc : lightLogoSrc
 
   return (
     <Image
@@ -34,7 +52,7 @@ export function Logo({
       width={width}
       height={height}
       className={className}
-      priority // Prioritize loading of the logo
+      priority
     />
   )
 }
