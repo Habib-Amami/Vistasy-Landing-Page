@@ -13,9 +13,9 @@ interface LogoDisplayProps {
 }
 
 export function Logo({
-  lightLogoSrc = "/vistasy_logo/logo_black.png",
-  darkLogoSrc = "/vistasy_logo/logo_white.png",
-  alt = "App Logo",
+  lightLogoSrc = "/vistasy_logo/vistasy-logo-black.png",
+  darkLogoSrc = "/vistasy_logo/vistasy-logo-white.png",
+  alt = "Vistasy Logo",
   width = 30,
   height = 30,
   className,
