@@ -6,12 +6,15 @@ import Feature from "@/components/home/feature";
 import LogoCloud from "@/components/home/logo-cloud";
 
 export async function generateMetadata() {
-  const t = await getTranslations("Metadata.home");
+    const t = await getTranslations("Metadata.home");
 
-  return {
-    title: t("title"),
-    description: t("description"),
-  };
+    return {
+        title: t("title"),
+        description: t("description"),
+        alternates: {
+            canonical: 'https://www.vistasy.clinic/en/home',
+        },
+    };
 }
 
 export default function Home() {
