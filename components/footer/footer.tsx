@@ -16,8 +16,8 @@ export default function Footer() {
         {/* === Mobile-only image === */}
         <div className="block md:hidden">
           <Image
-            src="/footer/mobile-footer-banner.svg"
-            alt="mobileBannerAlt"
+            src="/footer/facial-skin-features-overview.svg"
+            alt="Overview of 17 available facial skin features"
             width={800}
             height={200}
             className="w-full object-cover rounded-xl"
@@ -101,8 +101,8 @@ export default function Footer() {
           {/* Image Section (shown on desktop/tablet only) */}
           <div className="hidden md:block space-y-4 text-sm">
             <Image
-              src="/footer/desktop-footer-banner.png"
-              alt="desktopBannerAlt"
+              src="/footer/facial-skin-features-count.png"
+              alt="Circular graphic showing 17 facial skin features available."
               width={200}
               height={200}
               className="rounded-xl"
