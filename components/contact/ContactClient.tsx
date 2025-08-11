@@ -47,8 +47,6 @@ export default function ContactClient() {
         mode: "onTouched", // validate fields on blur
     });
 
-
-
     const onSubmit = async (data: ContactFormInputs) => {
         setLoading(true);
 
@@ -150,8 +148,8 @@ export default function ContactClient() {
 
                 <div className="flex-1 flex items-center justify-center p-8">
                     <Image
-                        src="/contact/contact.png"
-                        alt="Hands typing on a laptop"
+                        src="/contact/hands-typing-on-laptop.png"
+                        alt="Close-up of hands typing on a laptop keyboard."
                         width={400}
                         height={200}
                         className="object-contain"
