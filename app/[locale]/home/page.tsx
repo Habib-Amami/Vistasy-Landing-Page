@@ -22,12 +22,12 @@ export default function Home() {
             {/*Hero section section*/}
             <section className="max-w-5xl mx-auto pr-8 pl-8 pt-8">
                 <HeroSection
-                    backgroundImage="/hero-section/Hero-bg.svg"
-                    foregroundImage="/hero-section/Hero-fg.png"
+                    backgroundImage="/hero-section/abstract-gradient-hero-background.svg"
+                    backgroundImageAlt="A close-up image showing a blue and white background with an abstract design. The colors blend seamlessly into each other, creating a visually appealing pattern."
+                    foregroundImage="/hero-section/young-woman-taking-selfie.png"
+                    foregroundImageAlt="A young woman with blonde hair taking a selfie with a smartphone."
                     title="VISTASY"
                     subTitle={t('slogan')}
-                    // buttonText={t("contact")}
-                    // onButtonClick={() => { }}
                 />
             </section>
             {/*Partners section*/}
