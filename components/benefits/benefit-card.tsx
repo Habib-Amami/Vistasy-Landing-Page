@@ -33,7 +33,7 @@ export default function BenefitCard({
   return (
     <div
       className={cn(
-        "relative w-full max-w-2xl rounded-xl border-2 border-black dark:border-white dark:bg-[#4D4C4C] p-6 md:p-12 lg:p-16"
+        "relative w-full max-w-2xl rounded-xl border-2 border-black dark:border-white p-6 md:p-12 lg:p-16"
       )}
       style={{
         boxShadow: `8px 8px 0px 0px ${colorValue}`,
