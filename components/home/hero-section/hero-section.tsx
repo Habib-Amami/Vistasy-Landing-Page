@@ -5,21 +5,26 @@ interface HeroSectionProps {
   title: string;
   subTitle: string;
   backgroundImage: string;
+  backgroundImageAlt: string;
   foregroundImage: string;
+  foregroundImageAlt: string;
+
 }
 
 export default function HeroSection({
   title,
   subTitle,
   backgroundImage,
+  backgroundImageAlt,
   foregroundImage,
+  foregroundImageAlt
 }: HeroSectionProps) {
   return (
     <div className="relative rounded-2xl overflow-hidden w-full">
       {/* Background Image */}
       <Image
         src={backgroundImage}
-        alt="Background"
+        alt={backgroundImageAlt}
         fill
         className="object-cover"
         quality={100}
@@ -29,7 +34,7 @@ export default function HeroSection({
       {/* Overlay Content */}
       <div className="relative z-10 max-w-screen-xl mx-auto px-6 pt-6 md:pb-0 sm:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          
+
           {/* Text Section */}
           <div className="text-white md:w-1/2 space-y-10 text-center pb-6 md:text-left md:mb-0 mb-100">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">{title}</h1>
@@ -40,7 +45,7 @@ export default function HeroSection({
           <div className="hidden md:block md:w-1/2">
             <Image
               src={foregroundImage}
-              alt="Foreground"
+              alt={foregroundImageAlt}
               width={400}
               height={400}
               className="object-contain mx-auto"
