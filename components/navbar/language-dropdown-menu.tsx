@@ -47,7 +47,7 @@ export function LanguesDropdownMenu() {
 
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
-      <DropdownMenuTrigger asChild>
+      <DropdownMenuTrigger>
         <div className="flex ml-4 md:ml-8 self-center cursor-pointer">
           <Image
             src={flagMap[lang]}
