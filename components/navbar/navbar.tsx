@@ -15,6 +15,23 @@ import { useTranslations } from 'next-intl';
 export default function NavBar() {
     const [menuState, setMenuState] = useState(false)
     const pathname = usePathname()
+
+    // remove first segment if it's a locale (e.g., /en/home → /home)
+    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, '');
+
+    // Map paths to custom underline colors
+    const underlineColors: Record<string, string> = {
+        '/home': 'after:bg-c-blue',
+        '/benefits': 'after:bg-c-orange',
+        '/solution': 'after:bg-c-purple',
+        '/pricing': 'after:bg-c-blue',
+        '/contact': 'after:bg-c-orange',
+    };
+
+    // Fallback color if path not found in mapping
+    const getUnderlineColor = (path: string) =>
+        underlineColors[path] || 'after:bg-c-blue';
+
     const t = useTranslations('NavBar');
 
     return (
@@ -58,9 +75,10 @@ export default function NavBar() {
                                         <li className='pt-2' key={index}>
                                             <Link
                                                 href={item.href}
-                                                className={`relative block pb-1 text-muted-foreground hover:text-accent-foreground duration-150
-    ${pathname === item.href
-                                                        ? 'text-accent-foreground after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-1/2 after:bg-[#FF6B6B] after:transition-all after:duration-300'
+                                                onClick={() => setMenuState(false)}
+                                                className={`relative block pb-1 font-bold text-muted-foreground hover:text-accent-foreground duration-150
+    ${pathWithoutLocale === item.href
+                                                        ? `text-accent-foreground after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-1/2 ${getUnderlineColor(item.href)} after:transition-all after:duration-300`
                                                         : ''
                                                     }`}
                                             >
