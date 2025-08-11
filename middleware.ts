@@ -1,11 +1,28 @@
 import createMiddleware from 'next-intl/middleware';
-import {routing} from './i18n/routing';
- 
-export default createMiddleware(routing);
- 
+import { routing } from './i18n/routing';
+import type { NextRequest } from 'next/server';
+
+// Create the next-intl middleware instance
+const nextIntlMiddleware = createMiddleware(routing);
+
+export async function middleware(request: NextRequest) {
+  // Run the next-intl middleware first
+  const response = await nextIntlMiddleware(request);
+
+  // Add security headers
+  response.headers.set(
+    'Strict-Transport-Security',
+    'max-age=63072000; includeSubDomains; preload'
+  );
+
+  response.headers.set(
+    'Cross-Origin-Opener-Policy',
+    'same-origin'
+  );
+
+  return response;
+}
+
 export const config = {
-  // Match all pathnames except for
-  // - … if they start with `/api`, `/trpc`, `/_next` or `/_vercel`
-  // - … the ones containing a dot (e.g. `favicon.ico`)
-  matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)'
+  matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)',
 };
