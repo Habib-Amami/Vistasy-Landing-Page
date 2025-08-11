@@ -16,8 +16,8 @@ export default function LogoCloud() {
                             <div className="flex">
                                 <Image
                                     className="mx-auto h-5 w-fit dark:invert"
-                                    src="/partners/cdc.svg"
-                                    alt=""
+                                    src="/partners/cdc-logo.svg"
+                                    alt="Logo of the Caisse des Dépôts et Consignations"
                                     height="20"
                                     width="20"
                                 />
@@ -25,8 +25,8 @@ export default function LogoCloud() {
                             <div className="flex">
                                 <Image
                                     className="mx-auto h-5 w-fit dark:invert"
-                                    src="/partners/giz.svg"
-                                    alt=""
+                                    src="/partners/giz-logo.svg"
+                                    alt="Logo of GIZ - Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH"
                                     height="20"
                                     width="20"
                                 />
@@ -34,8 +34,8 @@ export default function LogoCloud() {
                             <div className="flex">
                                 <Image
                                     className="mx-auto h-5 w-fit dark:invert"
-                                    src="/partners/nabda.svg"
-                                    alt=""
+                                    src="/partners/nabda-logo.svg"
+                                    alt="Logo of Nabda, a modern brand symbolizing innovation and creativity."
                                     height="20"
                                     width="20"
                                 />
@@ -43,8 +43,8 @@ export default function LogoCloud() {
                             <div className="flex">
                                 <Image
                                     className="mx-auto h-5 w-fit dark:invert"
-                                    src="/partners/smartcapital.svg"
-                                    alt=""
+                                    src="/partners/smartcapital-logo.svg"
+                                    alt="Logo of Smart Capital, a financial services company."
                                     height="20"
                                     width="20"
                                 />
@@ -52,8 +52,8 @@ export default function LogoCloud() {
                             <div className="flex">
                                 <Image
                                     className="mx-auto h-5 w-fit dark:invert"
-                                    src="/partners/theworldbank.svg"
-                                    alt=""
+                                    src="/partners/theworldbank-logo.svg"
+                                    alt="Logo of The World Bank, an international financial institution."
                                     height="20"
                                     width="20"
                                 />
