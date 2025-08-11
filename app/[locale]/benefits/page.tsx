@@ -41,8 +41,8 @@ export default function Benefits() {
           stepNumber="01"
           title={t("cards.01.title")}
           description={t("cards.01.description")}
-          imageSrc="/benefits/bnf1.svg"
-          imageAlt=""
+          imageSrc="/benefits/character-pointing-at-door.svg"
+          imageAlt="A character in a purple outfit pointing at a door with a circular window in the background."
           colorClass="bg-c-purple"
         />
       </div>
@@ -51,8 +51,8 @@ export default function Benefits() {
           stepNumber="02"
           title={t("cards.02.title")}
           description={t("cards.02.description")}
-          imageSrc="/benefits/bnf2.svg"
-          imageAlt=""
+          imageSrc="/benefits/digital-security-concept.svg"
+          imageAlt="Illustration of a person using a laptop with a shield symbolizing digital security."
           colorClass="bg-c-blue"
           reverseLayout
         />
@@ -62,8 +62,8 @@ export default function Benefits() {
           stepNumber="03"
           title={t("cards.03.title")}
           description={t("cards.03.description")}
-          imageSrc="/benefits/bnf3.svg"
-          imageAlt=""
+          imageSrc="/benefits/urban-lifestyle-illustration.svg"
+          imageAlt="An artistic depiction of a person in an urban setting with a heart, bell, and upward arrows."
           colorClass="bg-c-orange"
         />
       </div>
@@ -72,8 +72,8 @@ export default function Benefits() {
           stepNumber="04"
           title={t("cards.04.title")}
           description={t("cards.04.description")}
-          imageSrc="/benefits/bnf4.svg"
-          imageAlt=""
+          imageSrc="/benefits/modern-illustration-working-professional.svg"
+          imageAlt="A modern illustration of a professional working with geometric shapes and digital elements in a creative environment."
           colorClass="bg-c-purple"
           reverseLayout
         />
@@ -83,8 +83,8 @@ export default function Benefits() {
           stepNumber="05"
           title={t("cards.05.title")}
           description={t("cards.05.description")}
-          imageSrc="/benefits/bnf5.svg"
-          imageAlt=""
+          imageSrc="/benefits/business-analytics-illustration.svg"
+          imageAlt="Illustration of a person sitting next to a pie chart and clouds, representing business analytics."
           colorClass="bg-c-blue"
         />
       </div>
@@ -97,8 +97,8 @@ export default function Benefits() {
             stepNumber="01"
             title={t("cards.01.title")}
             description={t("cards.01.description")}
-            imageSrc="/benefits/bnf1.svg"
-            imageAlt=""
+            imageSrc="/benefits/character-pointing-at-door.svg"
+            imageAlt="A character in a purple outfit pointing at a door with a circular window in the background."
             colorClass="bg-c-purple"
           />
         </div>
@@ -114,8 +114,8 @@ export default function Benefits() {
             stepNumber="02"
             title={t("cards.02.title")}
             description={t("cards.02.description")}
-            imageSrc="/benefits/bnf2.svg"
-            imageAlt=""
+            imageSrc="/benefits/digital-security-concept.svg"
+            imageAlt="Illustration of a person using a laptop with a shield symbolizing digital security."
             colorClass="bg-c-blue"
             reverseLayout
           />
@@ -128,8 +128,8 @@ export default function Benefits() {
             stepNumber="03"
             title={t("cards.03.title")}
             description={t("cards.03.description")}
-            imageSrc="/benefits/bnf3.svg"
-            imageAlt=""
+            imageSrc="/benefits/urban-lifestyle-illustration.svg"
+            imageAlt="An artistic depiction of a person in an urban setting with a heart, bell, and upward arrows."
             colorClass="bg-c-orange"
           />
         </div>
@@ -145,14 +145,13 @@ export default function Benefits() {
             stepNumber="04"
             title={t("cards.04.title")}
             description={t("cards.04.description")}
-            imageSrc="/benefits/bnf4.svg"
-            imageAlt=""
+            imageSrc="/benefits/modern-illustration-working-professional.svg"
+            imageAlt="A modern illustration of a professional working with geometric shapes and digital elements in a creative environment."
             colorClass="bg-c-purple"
             reverseLayout
           />
         </div>
       </div>
-
       {/* Card 5 */}
       <div className="hidden lg:flex w-full max-w-5xl">
         <div className="w-3/4">
@@ -160,8 +159,8 @@ export default function Benefits() {
             stepNumber="05"
             title={t("cards.05.title")}
             description={t("cards.05.description")}
-            imageSrc="/benefits/bnf5.svg"
-            imageAlt=""
+            imageSrc="/benefits/business-analytics-illustration.svg"
+            imageAlt="Illustration of a person sitting next to a pie chart and clouds, representing business analytics."
             colorClass="bg-c-blue"
           />
         </div>
