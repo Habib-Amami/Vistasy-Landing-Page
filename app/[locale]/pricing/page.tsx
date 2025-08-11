@@ -24,9 +24,9 @@ export default function Pricing() {
       <h1 className="uppercase text-2xl text-center lg:text-4xl font-extrabold">
         {t("title")}
       </h1>
-      <h4 className="uppercase p-8 text-sm text-center lg:text-md font-medium">
+      <h2 className="uppercase p-8 text-sm text-center lg:text-md font-medium">
         {t("subtitle")}
-      </h4>
+      </h2>
 
       <div className="mb-6 flex justify-center">
         <Image
