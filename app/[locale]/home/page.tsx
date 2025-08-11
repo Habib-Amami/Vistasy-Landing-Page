@@ -24,7 +24,7 @@ export default function Home() {
                 <HeroSection
                     backgroundImage="/hero-section/abstract-gradient-hero-background.svg"
                     backgroundImageAlt="A close-up image showing a blue and white background with an abstract design. The colors blend seamlessly into each other, creating a visually appealing pattern."
-                    foregroundImage="/hero-section/young-woman-taking-selfie.png"
+                    foregroundImage="/hero-section/young-woman-taking-selfie.webp"
                     foregroundImageAlt="A young woman with blonde hair taking a selfie with a smartphone."
                     title="VISTASY"
                     subTitle={t('slogan')}
