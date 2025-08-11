@@ -14,13 +14,19 @@ import { useTheme } from "next-themes";
 
 export default function ThemeSwitcher() {
   const [open, setOpen] = React.useState(false);
-  const { setTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
+
+  const isDark = theme === 'dark';
 
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
-        <Button size="icon" variant="outline">
-          <SunIcon />
+        <Button
+          size="icon"
+          variant="outline"
+          aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+        >
+          {isDark ? <SunIcon /> : <MoonIcon />}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
@@ -34,3 +40,5 @@ export default function ThemeSwitcher() {
     </DropdownMenu>
   );
 }
+
+
