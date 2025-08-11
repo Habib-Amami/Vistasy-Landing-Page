@@ -40,30 +40,30 @@ export default function Home() {
                 <Feature
                     title={t('feature1.title')}
                     description={t('feature1.description')}
-                    imageSrc="/features/ft1.png"
-                    imageAlt=""
+                    imageSrc="/features/smartphone-skin-diagnosis-app.png"
+                    imageAlt="A smartphone displaying a skin diagnosis app interface with a close-up of a person's face."
                     buttonColor="bg-c-purple"
                 />
                 <Feature
                     title={t('feature2.title')}
                     description={t('feature2.description')}
-                    imageSrc="/features/ft2.png"
-                    imageAlt=""
+                    imageSrc="/features/face-scan-app-interface.png"
+                    imageAlt="User interface for facial scanning application with guidelines."
                     reverse={true}
                     buttonColor="bg-c-orange"
                 />
                 <Feature
                     title={t('feature3.title')}
                     description={t('feature3.description')}
-                    imageSrc="/features/ft3.png"
-                    imageAlt=""
+                    imageSrc="/features/facial-diagnosis-image.png"
+                    imageAlt="Image showing a facial analysis indicating the presence of dark circles under the eyes."
                     buttonColor="bg-c-blue"
                 />
                 <Feature
                     title={t('feature4.title')}
                     description={t('feature4.description')}
-                    imageSrc="/features/ft4.png"
-                    imageAlt=""
+                    imageSrc="/features/smart-mirror-face-analysis.png"
+                    imageAlt="A woman using a smart mirror for face analysis."
                     reverse={true}
                     buttonColor="bg-c-purple"
                 />

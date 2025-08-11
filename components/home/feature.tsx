@@ -55,7 +55,7 @@ const Feature: React.FC<FeatureProps> = ({
           <div className="mb-6 flex justify-center md:justify-start">
             <Image
               src={svgSrc}
-              alt="Decoration line"
+              alt="curved-divider-line"
               width={150}
               height={16}
               className="object-contain"
