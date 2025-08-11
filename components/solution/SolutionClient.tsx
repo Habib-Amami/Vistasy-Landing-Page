@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
+import SolutionCard from "./solution-card";
 
-import SolutionCard1 from "@/components/solution/solution-card-1";
 
 export default function SolutionClient() {
   const { theme } = useTheme();
@@ -25,9 +25,9 @@ export default function SolutionClient() {
         />
       </div>
       <div className="flex flex-col gap-16 md:gap-32">
-        <SolutionCard1
+        <SolutionCard
           title={t("OnlineStore.online_store")}
-          imageSrc={theme === "dark" ? "/solution/sl1-d.svg" : "/solution/sl1.svg"}
+          imageSrc={theme === "dark" ? "/solution/modern-workspace-illustration-dark.svg" : "/solution/modern-workspace-illustration.svg"}
           imageAlt=""
           colorClass="bg-c-purple"
           stats={[
@@ -38,9 +38,9 @@ export default function SolutionClient() {
             { value: "30%", label: t("OnlineStore.higher_ROI_targeted_campaigns") },
           ]}
         />
-        <SolutionCard1
+        <SolutionCard
           title={t("OnsiteStore.onsite_store")}
-          imageSrc={theme === "dark" ? "/solution/sl2-d.svg" : "/solution/sl2.svg"}
+          imageSrc={theme === "dark" ? "/solution/person-with-mirror-illustraction-dark.svg" : "/solution/person-with-mirror-illustraction.svg"}
           imageAlt=""
           colorClass="bg-c-blue"
           reverseLayout={true}
@@ -52,10 +52,10 @@ export default function SolutionClient() {
             { value: "30%", label: t("OnsiteStore.effective_targeted_marketing") },
           ]}
         />
-        <SolutionCard1
+        <SolutionCard
           title={t("OnlineOnsiteStores.online_onsite_stores")}
-          imageSrc={theme === "dark" ? "/solution/sl3-d.svg" : "/solution/sl3.svg"}
-          imageAlt=""
+          imageSrc={theme === "dark" ? "/solution/woman-looking-in-mirror-dark.svg" : "/solution/woman-looking-in-mirror.svg"}
+          imageAlt="A woman admiring herself in a mirror while a person holds a phone, surrounded by decorative items."
           colorClass="bg-c-orange"
           stats={[
             { value: t("OnlineOnsiteStores.online_store_solution"), label: "" },
