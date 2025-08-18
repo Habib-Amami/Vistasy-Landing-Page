@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 import { PricingCard } from "@/components/pricing/pricing-card";
+import AnimatedHeading from "@/components/animated-heading";
 
 export async function generateMetadata() {
   const t = await getTranslations("Metadata.pricing");
@@ -21,12 +22,12 @@ export default function Pricing() {
 
   return (
     <main className="max-w-6xl mx-auto p-8 lg:p-16">
-      <h1 className="uppercase text-2xl text-center lg:text-4xl font-extrabold">
+      <AnimatedHeading className="uppercase text-2xl text-center lg:text-4xl font-extrabold">
         {t("title")}
-      </h1>
-      <h2 className="uppercase p-8 text-sm text-center lg:text-md font-medium">
+      </AnimatedHeading>
+      <AnimatedHeading className="uppercase p-8 text-sm text-center lg:text-md font-medium">
         {t("subtitle")}
-      </h2>
+      </AnimatedHeading>
 
       <div className="mb-6 flex justify-center">
         <Image
