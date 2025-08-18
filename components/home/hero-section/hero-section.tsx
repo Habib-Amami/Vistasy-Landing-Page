@@ -1,4 +1,5 @@
 'use client';
+import { motion } from "motion/react";
 import Image from "next/image";
 
 interface HeroSectionProps {
@@ -20,38 +21,75 @@ export default function HeroSection({
   foregroundImageAlt
 }: HeroSectionProps) {
   return (
-    <div className="relative rounded-2xl overflow-hidden w-full">
+    <motion.div
+      className="relative rounded-2xl overflow-hidden w-full"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       {/* Background Image */}
-      <Image
-        src={backgroundImage}
-        alt={backgroundImageAlt}
-        fill
-        className="object-cover"
-        quality={100}
-        priority
-      />
-
+      <motion.div
+        initial={{ scale: 1.1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className="absolute inset-0"
+      >
+        <Image
+          src={backgroundImage}
+          alt={backgroundImageAlt}
+          fill
+          className="object-cover"
+          quality={100}
+          priority
+        />
+      </motion.div>
       {/* Overlay Content */}
       <div className="relative z-10 max-w-screen-xl mx-auto px-6 pt-6 md:pb-0 sm:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
 
           {/* Text Section */}
-          <div className="text-white md:w-1/2 space-y-10 text-center pb-6 md:text-left md:mb-0 mb-100">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold">{title}</h1>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold capitalize">{subTitle}</h2>
-          </div>
+          <motion.div
+            className="text-white md:w-1/2 space-y-10 text-center pb-6 md:text-left md:mb-0 mb-100"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+          >
+            <motion.h1
+              className="text-3xl sm:text-5xl lg:text-6xl font-bold"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+            >
+              {title}
+            </motion.h1>
+            <motion.h2
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold capitalize"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
+            >
+              {subTitle}
+            </motion.h2>
+          </motion.div>
 
           {/* Foreground Image (side-by-side for md+) */}
-          <div className="hidden md:block md:w-1/2">
+          <motion.div
+            className="hidden md:block md:w-1/2"
+            initial={{ opacity: 0, x: 50, rotate: -5 }}
+            animate={{ opacity: 1, x: 0, rotate: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            whileHover={{ scale: 1.05, rotate: 2 }}
+            whileTap={{ scale: 0.95 }}
+          >
             <Image
-              src={foregroundImage}
+              src={foregroundImage || "/placeholder.svg"}
               alt={foregroundImageAlt}
               width={400}
               height={400}
               className="object-contain mx-auto"
               priority
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -65,6 +103,6 @@ export default function HeroSection({
           className="object-contain mx-auto"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
