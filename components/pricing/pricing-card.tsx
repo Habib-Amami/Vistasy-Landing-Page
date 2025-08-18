@@ -1,4 +1,5 @@
 "use client"
+import { useRouter } from '@/i18n/navigation';
 
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -76,6 +77,7 @@ export function PricingCard({
   delay = 0, // Default delay value
 }: PricingCardProps) {
   const IconComponent = iconMap[icon]
+  const router = useRouter();
 
   return (
     <motion.div
@@ -178,6 +180,7 @@ export function PricingCard({
               className={cn("w-full py-3 text-lg font-semibold rounded-lg text-black capitalize")}
               style={{ backgroundColor: cardColor }}
               asChild
+              onClick={()=>router.push("/contact")}
             >
               <motion.button
                 variants={buttonVariants}

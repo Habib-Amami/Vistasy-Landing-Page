@@ -1,4 +1,5 @@
 "use client"
+import {useRouter} from '@/i18n/navigation';
 
 import type React from "react"
 import Image from "next/image"
@@ -34,6 +35,8 @@ const Feature: React.FC<FeatureProps> = ({
 }) => {
   const svgSrc = colorToSvgMap[buttonColor]
   const t = useTranslations("HomePage")
+  const router = useRouter();
+
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -127,8 +130,8 @@ const Feature: React.FC<FeatureProps> = ({
 
         <motion.div className="flex justify-center lg:justify-start" variants={itemVariants}>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
-            <Button className={`${buttonColor} text-black font-semibold capitalize`}>
-              <MousePointer2 fill="currentColor" />
+            <Button className={`${buttonColor} text-black font-semibold capitalize`} onClick={()=>router.push("/contact")}>
+              <MousePointer2 fill="currentColor"  />
               {t("contact")}
             </Button>
           </motion.div>

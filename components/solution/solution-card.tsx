@@ -1,4 +1,5 @@
 "use client"
+import { useRouter } from '@/i18n/navigation';
 
 import Image from "next/image"
 
@@ -38,6 +39,7 @@ export default function SolutionCard({
   secondary_button_text
 }: SolutionCardProps) {
   const colorValue = colorMap[colorClass] || "#8B5CF6" // fallback color
+  const router = useRouter();
 
   return (
     <motion.div
@@ -122,8 +124,12 @@ export default function SolutionCard({
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <Button className={`${colorClass} capitalize text-black font-semibold w-full sm:w-auto`}>
-              <VideoIcon fill="currentColor" /> {primary_button_text}            </Button>
+            <Button
+              onClick={() => router.push("/contact")}
+              className={`${colorClass} capitalize text-black font-semibold w-full sm:w-auto`}
+            >
+              <VideoIcon fill="currentColor" /> {primary_button_text}
+            </Button>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -133,6 +139,7 @@ export default function SolutionCard({
             <Button
               variant="outline"
               className="capitalize font-semibold w-full sm:w-auto dark:bg-black dark:border dark:border-white bg-transparent"
+              onClick={()=>router.push("/pricing")}
             >
               <MousePointer2 fill="currentColor" /> {secondary_button_text}
             </Button>
