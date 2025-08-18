@@ -108,7 +108,9 @@
             "onsite_store_solution": "Solution Magasin PHYSIQUE",
             "seamless_omni_channel_experience": "Expérience Omnicanale Fluide",
             "enhanced_loyalty_program": "Programme de Fidélité Amélioré"
-        }
+        },
+        "primary_button_text":"réserver un appel",
+        "secondary_button_text": "vérifier les prix" 
     },
     "PricingPage": {
         "title": "Prêt à commencer ?",

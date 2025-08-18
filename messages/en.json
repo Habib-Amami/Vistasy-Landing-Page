@@ -108,7 +108,9 @@
             "onsite_store_solution": "ONSITE Store Solution",
             "seamless_omni_channel_experience": "Seamless Omni-Channel Experience",
             "enhanced_loyalty_program": "Enhanced Customer Loyalty Program"
-        }
+        },
+        "primary_button_text":"book a call",
+        "secondary_button_text": "check pricing"   
     },
     "PricingPage": {
         "title": "Ready to get started ?",
