@@ -302,7 +302,7 @@ export default function ContactClient() {
                   >
                     <MousePointerClick fill="currentcolor" />
                   </motion.div>
-                  {loading ? "Sending..." : t("form.submit_button")}
+                  {loading ? t('loading_message') : t("form.submit_button")}
                 </Button>
               </motion.div>
             </motion.div>
