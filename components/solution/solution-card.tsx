@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import Image from "next/image"
 
@@ -7,7 +7,8 @@ import { cn } from "@/lib/utils"
 
 import { VideoIcon, MousePointer2 } from "lucide-react"
 
-import StatItem, { StatItemInterface } from "./state-item"
+import StatItem, { type StatItemInterface } from "./state-item"
+import { motion } from "motion/react"
 
 interface SolutionCardProps {
   title: string
@@ -16,6 +17,8 @@ interface SolutionCardProps {
   colorClass?: string // Example: "bg-c-purple"
   reverseLayout?: boolean
   stats: StatItemInterface[]
+  primary_button_text: string,
+  secondary_button_text: string
 }
 
 const colorMap: Record<string, string> = {
@@ -30,61 +33,112 @@ export default function SolutionCard({
   imageAlt,
   colorClass = "bg-c-purple",
   reverseLayout = false,
-  stats
+  stats,
+  primary_button_text,
+  secondary_button_text
 }: SolutionCardProps) {
   const colorValue = colorMap[colorClass] || "#8B5CF6" // fallback color
 
   return (
-    <div
+    <motion.div
       className={cn(
         "flex flex-col md:flex-row items-stretch min-h-[400px] gap-16",
-        reverseLayout && "md:flex-row-reverse"
+        reverseLayout && "md:flex-row-reverse",
       )}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.15 } },
+      }}
     >
       {/* Image + Title */}
-
-      <div className="flex-1 flex flex-col gap-4 items-center">
-        <h2
-          className="text-2xl font-extrabold uppercase text-center"
-        >
-          {title}.
-        </h2>
-        <div className="relative w-full h-full min-h-[300px] rounded-xl overflow-hidden">
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            fill
-            className="object-cover"
-          />
-        </div>
-      </div>
-
-      {/* Stats + Buttons */}
-      <div
-        className={cn(
-          "flex-1 flex flex-col justify-between rounded-xl border-2 border-black dark:border-white p-6 md:p-8"
-        )}
-        style={{
-          boxShadow: `8px 8px 0px 0px ${colorValue}`,
+      <motion.div
+        className="flex-1 flex flex-col gap-4 items-center"
+        variants={{
+          hidden: { opacity: 0, x: reverseLayout ? 50 : -50 },
+          visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
         }}
       >
-        <div className="flex flex-col gap-4">
-          {stats.map((item, index) => (
-            <StatItem key={index} value={item.value} label={item.label} />
-          ))}
-        </div>
+        <motion.h2
+          className="text-2xl font-extrabold uppercase text-center"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { duration: 0.6 } },
+          }}
+        >
+          {title}
+        </motion.h2>
+        <motion.div
+          className="relative w-full h-full min-h-[300px] rounded-xl overflow-hidden"
+          variants={{
+            hidden: { opacity: 0, scale: 0.9 },
+            visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
+          }}
+        >
+          <Image src={imageSrc || "/placeholder.svg"} alt={imageAlt} fill className="object-cover" />
+        </motion.div>
+      </motion.div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-          <Button className={`${colorClass} text-black font-semibold w-full sm:w-auto`}>
-            <VideoIcon fill="currentColor" /> Book a Call
-          </Button>
-          <Button variant="outline" className="font-semibold w-full sm:w-auto dark:bg-black dark:border dark:border-white">
-            <MousePointer2 fill="currentColor" /> Check Pricing
-          </Button>
-        </div>
-      </div>
-    </div>
+      {/* Stats + Buttons */}
+      <motion.div
+        className="flex-1 flex flex-col justify-between rounded-xl border-2 border-black dark:border-white p-6 md:p-8"
+        style={{ boxShadow: `8px 8px 0px 0px ${colorValue}` }}
+        variants={{
+          hidden: { opacity: 0, x: reverseLayout ? -50 : 50 },
+          visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+        }}
+      >
+        <motion.div
+          className="flex flex-col gap-4"
+          variants={{
+            hidden: {},
+            visible: { transition: { staggerChildren: 0.1 } },
+          }}
+        >
+          {stats.map((item, index) => (
+            <motion.div
+              key={index}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
+              <StatItem value={item.value} label={item.label} />
+            </motion.div>
+          ))}
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col sm:flex-row gap-4 justify-center pt-6"
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+          }}
+        >
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            <Button className={`${colorClass} capitalize text-black font-semibold w-full sm:w-auto`}>
+              <VideoIcon fill="currentColor" /> {primary_button_text}            </Button>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            <Button
+              variant="outline"
+              className="capitalize font-semibold w-full sm:w-auto dark:bg-black dark:border dark:border-white bg-transparent"
+            >
+              <MousePointer2 fill="currentColor" /> {secondary_button_text}
+            </Button>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   )
 }
-
-
