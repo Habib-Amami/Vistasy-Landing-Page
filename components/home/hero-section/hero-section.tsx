@@ -1,4 +1,5 @@
 'use client';
+import AnimatedHeading from "@/components/animated-heading";
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -54,14 +55,11 @@ export default function HeroSection({
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           >
-            <motion.h1
+            <AnimatedHeading
               className="text-3xl sm:text-5xl lg:text-6xl font-bold"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
             >
               {title}
-            </motion.h1>
+            </AnimatedHeading>
             <motion.h2
               className="text-2xl sm:text-3xl lg:text-4xl font-bold capitalize"
               initial={{ opacity: 0, y: 30 }}
