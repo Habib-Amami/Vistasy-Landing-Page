@@ -58,8 +58,8 @@ const featureVariants = {
 
 const buttonVariants = {
   hover: {
-    scale: 1.05,
-    boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+    scale: 1.02,
+    boxShadow: "0 5px 5px rgba(0,0,0,0.15)",
     transition: { duration: 0.2 },
   },
   tap: { scale: 0.98 },
