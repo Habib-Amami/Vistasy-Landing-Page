@@ -47,9 +47,9 @@ const Feature: React.FC<FeatureProps> = ({
   }
 
   const itemVariants: Variants = {
-    hidden: { 
-      opacity: 0, 
-      y: 30 
+    hidden: {
+      opacity: 0,
+      y: 30
     },
     visible: {
       opacity: 1,
@@ -62,9 +62,9 @@ const Feature: React.FC<FeatureProps> = ({
   }
 
   const imageVariants: Variants = {
-    hidden: { 
-      opacity: 0, 
-      scale: 0.8 
+    hidden: {
+      opacity: 0,
+      scale: 0.8
     },
     visible: {
       opacity: 1,
@@ -107,6 +107,7 @@ const Feature: React.FC<FeatureProps> = ({
           <motion.div
             className="mb-6 flex justify-center md:justify-start"
             variants={itemVariants}
+            viewport={{ once: true, amount: 0.3 }}
             whileInView={{ scaleX: [0, 1] }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
