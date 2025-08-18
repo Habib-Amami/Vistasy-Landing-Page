@@ -110,7 +110,7 @@
             "enhanced_loyalty_program": "Programme de Fidélité Amélioré"
         },
         "primary_button_text":"réserver un appel",
-        "secondary_button_text": "vérifier les prix" 
+        "secondary_button_text": "vérifier les prix"
     },
     "PricingPage": {
         "title": "Prêt à commencer ?",
@@ -171,6 +171,11 @@
                 "message_required": "Le message est obligatoire"
             }
         },
-        "contact_paragraph": "Ou contactez-nous via cet e-mail"
+        "contact_paragraph": "Ou contactez-nous via cet e-mail",
+        "successTitle": "MERCI DE NOUS AVOIR CONTACTÉS !",
+        "errorTitle": "OUPS, UNE ERREUR EST SURVENUE !",
+        "successDescription": "Merci pour votre e-mail. Nous vous contacterons sous peu.",
+        "errorDescription": "Un problème est survenu lors du traitement de votre demande. Veuillez réessayer plus tard.",
+        "loading_message": "Envoi..."
     }
 }

@@ -110,7 +110,7 @@
             "enhanced_loyalty_program": "Enhanced Customer Loyalty Program"
         },
         "primary_button_text":"book a call",
-        "secondary_button_text": "check pricing"   
+        "secondary_button_text": "check pricing"
     },
     "PricingPage": {
         "title": "Ready to get started ?",
@@ -170,6 +170,11 @@
                 "message_required": "Message is required"
             }
         },
-        "contact_paragraph": "Or contact us via this e-mail"
+        "contact_paragraph": "Or contact us via this e-mail",
+        "successTitle": "THANK YOU FOR REACHING OUT!",
+        "errorTitle": "OOPS, SOMETHING WENT WRONG!",
+        "successDescription": "Thank you for your email. We will be in touch with you shortly.",
+        "errorDescription": "There was an issue processing your request. Please try again later.",
+        "loading_message":"Sending..."
     }
 }
