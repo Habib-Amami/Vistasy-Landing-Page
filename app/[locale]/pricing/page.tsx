@@ -21,7 +21,7 @@ export default function Pricing() {
   const t = useTranslations("PricingPage");
 
   return (
-    <main className="max-w-6xl mx-auto p-8 lg:p-16">
+    <main className="max-w-6xl mx-auto p-16 lg:p-16">
       <AnimatedHeading className="uppercase text-2xl text-center lg:text-4xl font-extrabold">
         {t("title")}
       </AnimatedHeading>
